@@ -22,13 +22,26 @@ A modern, tech-driven portfolio landing page featuring a dark theme with vivid b
 1. **Hero Section**: Bold "Our Work. Your Way." typography with animated particle background
 2. **About**: Personal introduction with contact information and social links
 3. **Education**: B.Tech Computer Science details from Alva's Institute
-4. **Technical Skills**: 4-column grid showcasing programming languages, databases, tools
+4. **Technical Skills**: Categorized technical skills with Simple Icons logos
+   - Languages: Go, Dart, Java, C, Rust, Python, TypeScript, JavaScript
+   - Frameworks: React, Flutter, Node.js, Echo
+   - Version Control: Git, GitHub
+   - Caching Systems: Redis, Memcached
+   - Databases: MySQL, PostgreSQL, MongoDB
+   - Message Brokers: MQTT, NATS
+   - Queues: RabbitMQ
+   - DevOps Tools: Docker, Kubernetes, GitHub Actions, Ansible
+   - Cloud Platforms: AWS, Azure, GCP, DigitalOcean
+   - Developer Tools & Soft Skills sections
 5. **Experience**: Web Development Internship at Epicode (May-July 2024)
-6. **Projects**: 4 major projects with technology badges and descriptions
-   - SKF Elixer Drier Application
+6. **Things I've Built**: 7 major projects in 2-card-per-row layout
    - VSENSE Biometric User Panel
-   - NFC Reader Writer Bluetooth App
-   - Bird Watchers Application
+   - Drive Routes – B2B Mobile Trading Platform
+   - PayBazaar – Fintech Portal
+   - EddoSwipe – Rural Fintech Integration Platform (Flagship)
+   - Vithsutra RFID Telephony Application
+   - CA Application
+   - SKF Elixer Drier Application
 7. **Leadership**: Edwin's Lab Open Source coordinator role
 8. **Highlights**: Key achievements and expertise areas
 9. **Footer**: Social media links and copyright
@@ -103,4 +116,9 @@ Server runs on port 5000 with Vite HMR enabled.
 - Added scroll-based fade-in animations for sections
 - Built responsive mobile menu
 - Added floating particle background animation
-- Completed end-to-end testing of all interactive features
+- Reorganized Skills Section with categorized subsections (Languages, Frameworks, Databases, etc.)
+- Integrated Simple Icons CDN with original brand colors for all technology logos
+- Updated Projects Section to "Things I've Built" with 7 new projects
+- Removed timeline/dates from projects section
+- Maintained 2-card-per-row layout for projects
+- Added data-testid attributes for all interactive elements

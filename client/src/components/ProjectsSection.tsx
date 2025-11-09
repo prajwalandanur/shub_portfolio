@@ -1,46 +1,78 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const projects = [
   {
-    title: 'SKF Elixer Drier Application',
-    date: 'August 2024',
-    technologies: ['Golang', 'PostgreSQL', 'Docker', 'Postman', 'SvelteKit', 'Flutter', 'BLoC', 'EMQX'],
-    highlights: [
-      'Real-time rice drier monitoring system with Flutter.',
-      'Handled multiple streams via BLoC.',
-      'Integrated MQTT + EMQX PUB/SUB model.',
-    ],
-  },
-  {
     title: 'VSENSE Biometric User Panel',
-    date: 'March 2024',
-    technologies: ['Golang', 'PostgreSQL', 'Docker', 'SvelteKit', 'Flutter', 'Redis'],
+    technologies: ['Golang', 'PostgreSQL', 'Docker', 'Postman', 'SvelteKit', 'Flutter', 'Redis'],
     highlights: [
-      'Built Flutter Windows User Portal + Golang HTTP Server.',
-      'Integrated USB serial communication for fingerprint registration.',
-      'Automated Excel sheet generation with Golang.',
-    ],
+      'Built a complete User Portal for Windows using Flutter, backed by a Golang HTTP server.',
+      'Integrated USB Serial communication with ESP-32 for fingerprint registration.',
+      'Implemented automatic Excel sheet generation using Go Excel libraries.',
+      'Used Redis-SON for faster biometric data handling and improved user experience.'
+    ]
   },
   {
-    title: 'NFC Reader Writer Bluetooth App',
-    date: 'March 2024',
+    title: 'Drive Routes – B2B Mobile Trading Platform',
+    technologies: ['Flutter', 'Node.js', 'Golang'],
+    highlights: [
+      'Built a trading platform connecting wholesalers / distributors directly to customers.',
+      'Reduced dependency on middle distributors by enabling direct digital trade.',
+      'Currently has 250+ active users using the platform for daily trading operations.',
+      'Delivered as an easily downloadable mobile app for seamless onboarding.'
+    ]
+  },
+  {
+    title: 'PayBazaar – Fintech Portal',
+    technologies: ['Go', 'React', 'PostgreSQL', 'Redis', 'Docker'],
+    highlights: [
+      'Built a multi-service digital portal similar to PayTM / PhonePe.',
+      'Users can book flight tickets, pay electricity bills, recharge mobiles and more.',
+      'Designed as a scalable web-based fintech solution using robust backend architecture.',
+      'Currently used by 500+ users for daily financial transactions.'
+    ]
+  },
+  {
+    title: 'EddoSwipe – Rural Fintech Integration Platform (Flagship)',
+    technologies: ['Go', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker', 'Kubernetes'],
+    highlights: [
+      'Built to support rural areas with low smartphone + internet penetration.',
+      'Users can apply for government schemes, pay utility bills, and transfer bank funds.',
+      'Integrated multiple bank APIs for seamless inter-bank transactions.',
+      'Currently serving 100,000+ users, processing ~2,000 transactions per day.'
+    ]
+  },
+  {
+    title: 'Vithsutra RFID Telephony Application',
+    technologies: ['Go', 'Flutter', 'MQTT', 'Docker', 'GitHub Actions'],
+    highlights: [
+      'Built telephony software for Vithsutra Technologies with RFID integration.',
+      'Linked RFID-based device authentication with our remote management portal.',
+      'Enabled secure data synchronization between hardware devices and backend services.',
+      'Improved tracking, verification and system control through RFID event triggers.'
+    ]
+  },
+  {
+    title: 'CA Application',
     technologies: ['Flutter', 'Golang'],
     highlights: [
-      'Developed NFC Reader/Writer over Bluetooth.',
-      'Built custom data exchange logic (Base64, Uint8List).',
-    ],
+      'Built for a Chartered Accountant firm for both customer-facing and internal use.',
+      'One section lets customers raise queries and get responses directly.',
+      'Internal section allows employees to communicate and receive admin broadcasts.',
+      'Enabled remote attendance marking using the mobile device\'s biometric sensor.'
+    ]
   },
   {
-    title: 'Bird Watchers Application',
-    date: 'July 2022',
-    technologies: ['Flutter', 'NodeJS', 'MongoDB', 'Docker', 'BLoC'],
+    title: 'SKF Elixer Drier Application',
+    technologies: ['Golang', 'PostgreSQL', 'Docker', 'Postman', 'SvelteKit', 'Flutter', 'BLoC', 'EMQX'],
     highlights: [
-      'Designed UI in Flutter, integrated APIs, applied dependency injection.',
-    ],
-  },
+      'Built a real-time rice drier monitoring application using Flutter.',
+      'Implemented Streams heavily and handled multiple streams using BLoC state management.',
+      'Integrated MQTT with EMQX broker and implemented full pub-sub flow.',
+      'Enabled real-time monitoring + control of drier parameters from the app.'
+    ]
+  }
 ];
 
 export default function ProjectsSection() {
@@ -56,7 +88,7 @@ export default function ProjectsSection() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
-          Projects
+          Things I've Built
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -70,11 +102,6 @@ export default function ProjectsSection() {
                 <h3 className="text-xl font-bold text-foreground">
                   {project.title}
                 </h3>
-                
-                <div className="flex items-center gap-2 text-gray-light">
-                  <Calendar className="h-4 w-4 text-primary" />
-                  <span className="text-sm">{project.date}</span>
-                </div>
                 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
