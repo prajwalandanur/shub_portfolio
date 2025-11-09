@@ -1,3 +1,4 @@
+import Navigation from '@/components/Navigation';
 import ParticleBackground from '@/components/ParticleBackground';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -12,6 +13,7 @@ import FooterSection from '@/components/FooterSection';
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-background">
+      <Navigation />
       <ParticleBackground />
       
       <div className="relative z-10">

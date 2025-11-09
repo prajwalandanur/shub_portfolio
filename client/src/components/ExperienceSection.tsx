@@ -1,9 +1,18 @@
 import { Card } from '@/components/ui/card';
 import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function ExperienceSection() {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="experience" className="py-24 md:py-32 px-6">
+    <section 
+      id="experience" 
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-24 md:py-32 px-6 transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-4">
           Experience

@@ -11,7 +11,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       <div className="absolute inset-0 gradient-radial-blue pointer-events-none" />
       
       <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8 animate-fade-in-up">

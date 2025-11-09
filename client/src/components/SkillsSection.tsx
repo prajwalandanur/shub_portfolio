@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { Code2, Database, Wrench, Layers } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const skillCategories = [
   {
@@ -25,8 +26,16 @@ const skillCategories = [
 ];
 
 export default function SkillsSection() {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="skills" className="py-24 md:py-32 px-6">
+    <section 
+      id="skills" 
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-24 md:py-32 px-6 transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
           Technical Skills

@@ -1,4 +1,5 @@
 import { CheckCircle2 } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const highlights = [
   'Cross-platform app development (Flutter, SvelteKit)',
@@ -8,8 +9,16 @@ const highlights = [
 ];
 
 export default function HighlightsSection() {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="highlights" className="py-24 md:py-32 px-6">
+    <section 
+      id="highlights" 
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-24 md:py-32 px-6 transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
           Highlights
