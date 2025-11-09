@@ -1,7 +1,6 @@
 import Navigation from '@/components/Navigation';
 import ParticleBackground from '@/components/ParticleBackground';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
 import EducationSection from '@/components/EducationSection';
 import SkillsSection from '@/components/SkillsSection';
 import ExperienceSection from '@/components/ExperienceSection';
@@ -18,7 +17,6 @@ export default function Home() {
       
       <div className="relative z-10">
         <HeroSection />
-        <AboutSection />
         <EducationSection />
         <SkillsSection />
         <ExperienceSection />
