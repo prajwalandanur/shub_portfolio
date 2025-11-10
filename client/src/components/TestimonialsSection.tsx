@@ -10,6 +10,8 @@ import download_1762782661762 from "@assets/download_1762782661762.jpeg";
 
 import download__1_ from "@assets/download (1).jpeg";
 
+import _1 from "@assets/1.jpeg";
+
 const testimonials = [
   {
     name: "Ravi Kumar",
@@ -78,7 +80,7 @@ export default function TestimonialsSection() {
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden bg-muted border-2 border-primary/10">
                   <img
-                    src={download__1_}
+                    src={_1}
                     alt={currentTestimonial.name}
                     className="w-full h-full object-cover"
                     data-testid={`testimonial-image-${currentIndex}`}
