@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card';
-import { Calendar, GraduationCap, MapPin } from 'lucide-react';
+import { GraduationCap, MapPin } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function EducationSection() {
@@ -37,11 +37,6 @@ export default function EducationSection() {
               <div className="flex items-center gap-2 text-gray-light">
                 <MapPin className="h-5 w-5 text-primary" />
                 <span>Moodbidri, Karnataka</span>
-              </div>
-              
-              <div className="flex items-center gap-2 text-gray-light">
-                <Calendar className="h-5 w-5 text-primary" />
-                <span>2021 – 2025</span>
               </div>
             </div>
           </div>
