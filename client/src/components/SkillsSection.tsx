@@ -106,7 +106,7 @@ export default function SkillsSection() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-deep-black text-center mb-4">
-          Technical Skills
+          Tech Stack
         </h2>
         <div className="w-24 h-1 bg-gold mx-auto mb-16 glow-gold" />
         
