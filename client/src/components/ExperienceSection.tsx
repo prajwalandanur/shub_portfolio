@@ -20,7 +20,7 @@ export default function ExperienceSection() {
         <div className="w-24 h-1 bg-gold mx-auto mb-16 glow-gold" />
         
         <div className="space-y-8">
-          <Card className="p-8 border-l-4 border-l-primary glow-blue-hover transition-all duration-300" data-testid="card-experience-intern">
+          <Card className="p-8 border-l-4 border-l-primary glow-gold-hover transition-all duration-300" data-testid="card-experience-intern">
             <div className="space-y-6">
               <div className="flex items-start gap-3">
                 <Briefcase className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
@@ -63,7 +63,7 @@ export default function ExperienceSection() {
             </div>
           </Card>
 
-          <Card className="p-8 border-l-4 border-l-primary glow-blue-hover transition-all duration-300" data-testid="card-experience-cofounder">
+          <Card className="p-8 border-l-4 border-l-primary glow-gold-hover transition-all duration-300" data-testid="card-experience-cofounder">
             <div className="space-y-6">
               <div className="flex items-start gap-3">
                 <Briefcase className="h-6 w-6 text-primary mt-1 flex-shrink-0" />

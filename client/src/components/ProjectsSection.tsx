@@ -96,7 +96,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="p-6 glow-blue-hover hover-elevate transition-all duration-300"
+              className="p-6 glow-gold-hover hover-elevate transition-all duration-300"
               data-testid={`card-project-${index}`}
             >
               <div className="space-y-4">

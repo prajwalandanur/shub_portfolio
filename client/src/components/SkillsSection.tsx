@@ -120,7 +120,7 @@ export default function SkillsSection() {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="flex flex-col items-center justify-center p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover-elevate glow-blue-hover"
+                    className="flex flex-col items-center justify-center p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover-elevate glow-gold-hover"
                     data-testid={`skill-${skill.name.toLowerCase()}-${skillIndex}`}
                   >
                     <div className="w-16 h-16 mb-4 flex items-center justify-center text-foreground">

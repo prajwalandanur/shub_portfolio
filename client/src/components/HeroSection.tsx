@@ -27,7 +27,7 @@ export default function HeroSection() {
             <div className="pt-4">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 glow-blue-hover"
+                className="text-lg px-8 py-6 glow-gold-hover"
                 onClick={handleContact}
                 data-testid="button-get-in-touch"
               >
