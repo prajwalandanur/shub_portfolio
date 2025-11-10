@@ -92,7 +92,7 @@ export default function ServicesSection() {
                   <div 
                     className="w-16 h-16 mb-6 flex items-center justify-center rounded-lg transition-all duration-300 group-hover:scale-110"
                     style={{
-                      background: 'linear-gradient(135deg, #005BFF 0%, #0A0A0A 100%)',
+                      background: '#4169e1',
                     }}
                   >
                     <IconComponent className="w-8 h-8 text-white" />

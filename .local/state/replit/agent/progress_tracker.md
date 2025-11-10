@@ -23,3 +23,12 @@
 [x] 17. Remove Highlights section completely
 [x] 18. Update navigation to include Services link
 [x] 19. Restart workflow and verify all changes
+
+## Additional Design Updates (Nov 10, 2025)
+[x] 20. Update background color to #d8e1f2
+[x] 21. Add three skill badges (Developer, Designer, Mentor) below name in hero section
+[x] 22. Change service card icon colors from dark blue to #4169e1
+[x] 23. Create testimonials section with carousel functionality
+[x] 24. Add testimonial content for CA Application and EddoSwipe projects
+[x] 25. Implement previous/next navigation arrows for testimonials
+[x] 26. Restart workflow and verify all changes

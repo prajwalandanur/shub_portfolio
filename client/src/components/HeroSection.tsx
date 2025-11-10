@@ -21,6 +21,21 @@ export default function HeroSection() {
               <span className="text-gold">C S</span>
             </h1>
             
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
+                <div className="w-2 h-2 rounded-full bg-gold"></div>
+                <span className="text-sm font-semibold text-deep-black">Developer</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
+                <div className="w-2 h-2 rounded-full bg-gold"></div>
+                <span className="text-sm font-semibold text-deep-black">Designer</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
+                <div className="w-2 h-2 rounded-full bg-gold"></div>
+                <span className="text-sm font-semibold text-deep-black">Mentor</span>
+              </div>
+            </div>
+            
             <p className="text-xl md:text-2xl text-gray-light leading-relaxed">Designer and Developer helping brands craft impactful digital experiences that merge creativity with technology</p>
             
             <div className="pt-4">
