@@ -122,9 +122,12 @@ Server runs on port 5000 with Vite HMR enabled.
 - **Noise Texture**: Added 3% opacity noise overlay for luxury feel
 - **Gradient Background**: Replaced particle system with slow CSS gradient animations (30-40s loops)
 - **Icon System**: Migrated from CDN to @iconify/react for reliable icon rendering
+- **Brand Icons**: Switched from simple-icons to logos:* collection for authentic brand colors
+- **MQTT Icon**: Applied official purple color (#660066) since no colored logo exists in Iconify
+- **Background Fix**: Removed dark mode class and gradient overlays to reveal pure white background
 - **Section Updates**: All section titles now use deep black with gold dividers
 - **Hero Update**: Name displays as "Shubhanga" (deep black) + "C S" (gold)
-- **Hover States**: Blue glow maintained for all interactive elements
+- **Hover States**: Gold glow maintained for all interactive elements
 - **File Cleanup**: Removed Education and Leadership sections per user request
 - **Experience Reordering**: Web Dev Intern now appears before Ex Co-founder role
 - **Design Philosophy**: Achieved "Apple × Behance × Creative Agency" aesthetic
