@@ -33,7 +33,9 @@ A modern, tech-driven portfolio landing page featuring a dark theme with vivid b
    - DevOps Tools: Docker, Kubernetes, GitHub Actions, Ansible
    - Cloud Platforms: AWS, Azure, GCP, DigitalOcean
    - Developer Tools & Soft Skills sections
-5. **Experience**: Web Development Internship at Epicode (May-July 2024)
+5. **Experience**: 
+   - Ex Co-founder and CEO at Vithsutra Technologies (March 2024 – October 2025)
+   - Web Development Internship at Epicode (May 2024 – July 2024)
 6. **Things I've Built**: 7 major projects in 2-card-per-row layout
    - VSENSE Biometric User Panel
    - Drive Routes – B2B Mobile Trading Platform
