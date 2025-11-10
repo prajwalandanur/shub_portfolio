@@ -2,81 +2,82 @@ import { Badge } from '@/components/ui/badge';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Icon } from '@iconify/react';
 
-// Organized skills by category with their Iconify icon names
+// Organized skills by category with their Iconify icon names (using logos: for original brand colors)
+// Note: MQTT uses simple-icons with official brand color (#660066) as no colored logo exists in logos collection
 const skillCategories = [
   {
     title: 'Languages',
     skills: [
-      { name: 'Go', icon: 'simple-icons:go' },
-      { name: 'Dart', icon: 'simple-icons:dart' },
-      { name: 'Java', icon: 'simple-icons:openjdk' },
-      { name: 'C', icon: 'simple-icons:c' },
-      { name: 'Rust', icon: 'simple-icons:rust' },
-      { name: 'Python', icon: 'simple-icons:python' },
-      { name: 'TypeScript', icon: 'simple-icons:typescript' },
-      { name: 'JavaScript', icon: 'simple-icons:javascript' },
+      { name: 'Go', icon: 'logos:go' },
+      { name: 'Dart', icon: 'logos:dart' },
+      { name: 'Java', icon: 'logos:java' },
+      { name: 'C', icon: 'logos:c' },
+      { name: 'Rust', icon: 'logos:rust' },
+      { name: 'Python', icon: 'logos:python' },
+      { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      { name: 'JavaScript', icon: 'logos:javascript' },
     ]
   },
   {
     title: 'Frameworks',
     skills: [
-      { name: 'React', icon: 'simple-icons:react' },
-      { name: 'Flutter', icon: 'simple-icons:flutter' },
-      { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
-      { name: 'Echo', icon: 'simple-icons:go' },
+      { name: 'React', icon: 'logos:react' },
+      { name: 'Flutter', icon: 'logos:flutter' },
+      { name: 'Node.js', icon: 'logos:nodejs-icon' },
+      { name: 'Echo', icon: 'logos:go' },
     ]
   },
   {
     title: 'Version Control',
     skills: [
-      { name: 'Git', icon: 'simple-icons:git' },
-      { name: 'GitHub', icon: 'simple-icons:github' },
+      { name: 'Git', icon: 'logos:git-icon' },
+      { name: 'GitHub', icon: 'logos:github-icon' },
     ]
   },
   {
     title: 'Caching Systems',
     skills: [
-      { name: 'Redis', icon: 'simple-icons:redis' },
-      { name: 'Memcached', icon: 'simple-icons:memcached' },
+      { name: 'Redis', icon: 'logos:redis' },
+      { name: 'Memcached', icon: 'devicon:memcached' },
     ]
   },
   {
     title: 'Databases',
     skills: [
-      { name: 'MySQL', icon: 'simple-icons:mysql' },
-      { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
-      { name: 'MongoDB', icon: 'simple-icons:mongodb' },
+      { name: 'MySQL', icon: 'logos:mysql' },
+      { name: 'PostgreSQL', icon: 'logos:postgresql' },
+      { name: 'MongoDB', icon: 'logos:mongodb-icon' },
     ]
   },
   {
     title: 'Message Brokers',
     skills: [
       { name: 'MQTT', icon: 'simple-icons:mqtt' },
-      { name: 'NATS', icon: 'simple-icons:natsdotio' },
+      { name: 'NATS', icon: 'logos:nats-icon' },
     ]
   },
   {
     title: 'Queues',
     skills: [
-      { name: 'RabbitMQ', icon: 'simple-icons:rabbitmq' },
+      { name: 'RabbitMQ', icon: 'logos:rabbitmq-icon' },
     ]
   },
   {
     title: 'DevOps Tools',
     skills: [
-      { name: 'Docker', icon: 'simple-icons:docker' },
-      { name: 'Kubernetes', icon: 'simple-icons:kubernetes' },
-      { name: 'GitHub Actions', icon: 'simple-icons:githubactions' },
-      { name: 'Ansible', icon: 'simple-icons:ansible' },
+      { name: 'Docker', icon: 'logos:docker-icon' },
+      { name: 'Kubernetes', icon: 'logos:kubernetes' },
+      { name: 'GitHub Actions', icon: 'logos:github-actions' },
+      { name: 'Ansible', icon: 'logos:ansible' },
     ]
   },
   {
     title: 'Cloud Platforms',
     skills: [
-      { name: 'AWS', icon: 'simple-icons:amazonaws' },
-      { name: 'Azure', icon: 'simple-icons:microsoftazure' },
-      { name: 'GCP', icon: 'simple-icons:googlecloud' },
-      { name: 'DigitalOcean', icon: 'simple-icons:digitalocean' },
+      { name: 'AWS', icon: 'logos:aws' },
+      { name: 'Azure', icon: 'logos:azure-icon' },
+      { name: 'GCP', icon: 'logos:google-cloud' },
+      { name: 'DigitalOcean', icon: 'logos:digital-ocean' },
     ]
   },
 ];
@@ -123,10 +124,11 @@ export default function SkillsSection() {
                     className="flex flex-col items-center justify-center p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover-elevate glow-gold-hover"
                     data-testid={`skill-${skill.name.toLowerCase()}-${skillIndex}`}
                   >
-                    <div className="w-16 h-16 mb-4 flex items-center justify-center text-foreground">
+                    <div className="w-16 h-16 mb-4 flex items-center justify-center">
                       <Icon 
                         icon={skill.icon}
                         className="w-full h-full"
+                        style={skill.name === 'MQTT' ? { color: '#660066' } : undefined}
                       />
                     </div>
                     <span className="text-sm font-medium text-foreground text-center">

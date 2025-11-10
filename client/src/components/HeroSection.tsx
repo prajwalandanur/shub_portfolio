@@ -12,7 +12,6 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center px-6 overflow-hidden">
-      <div className="absolute inset-0 gradient-radial-blue pointer-events-none" />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Name and Description */}

@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button';
 export default function FooterSection() {
   return (
     <footer id="contact" className="relative py-16 px-6 border-t border-border">
-      <div className="absolute inset-0 gradient-radial-blue pointer-events-none opacity-50" />
-      
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="flex flex-col items-center gap-8">
           <div className="flex flex-wrap items-center justify-center gap-4">
