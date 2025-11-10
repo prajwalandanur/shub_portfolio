@@ -41,4 +41,5 @@
 [x] 31. Remove "Designed & Built with Flutter & SvelteKit" from footer
 [x] 32. Restart workflow and verify all final changes
 [x] 33. Update Ravi Kumar (CA) testimonial photo with actual professional photo
-[x] 34. Restart workflow and verify testimonial photos display correctly
+[x] 34. Update Rahul Shetty (Technical Coordinator) testimonial photo with actual professional photo
+[x] 35. Restart workflow and verify all testimonial photos display correctly

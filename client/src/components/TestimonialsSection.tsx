@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import testimonial1 from "@assets/ksdahv_1762783464000.jpeg";
 import testimonial2 from "@assets/images (1)_1762782661761.jpeg";
-import testimonial3 from "@assets/download_1762782661762.jpeg";
+import testimonial3 from "@assets/download (1)_1762783668250.jpeg";
 
 const testimonials = [
   {
