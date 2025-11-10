@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import profilePhoto from '@assets/WhatsApp Image 2025-01-12 at 12.41.08 PM_1762782243694.jpeg';
 
 export default function HeroSection() {
   const handleContact = () => {
@@ -21,19 +22,12 @@ export default function HeroSection() {
               <span className="text-gold">C S</span>
             </h1>
             
-            <div className="flex items-center gap-3 flex-wrap">
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
-                <div className="w-2 h-2 rounded-full bg-gold"></div>
-                <span className="text-sm font-semibold text-deep-black">Developer</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
-                <div className="w-2 h-2 rounded-full bg-gold"></div>
-                <span className="text-sm font-semibold text-deep-black">Designer</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-primary/20 shadow-sm">
-                <div className="w-2 h-2 rounded-full bg-gold"></div>
-                <span className="text-sm font-semibold text-deep-black">Mentor</span>
-              </div>
+            <div className="flex items-center gap-3 flex-wrap text-lg md:text-xl">
+              <span className="font-medium text-foreground">Developer</span>
+              <span className="text-primary">•</span>
+              <span className="font-medium text-foreground">Designer</span>
+              <span className="text-primary">•</span>
+              <span className="font-medium text-foreground">Mentor</span>
             </div>
             
             <p className="text-xl md:text-2xl text-gray-light leading-relaxed">Designer and Developer helping brands craft impactful digital experiences that merge creativity with technology</p>
@@ -50,17 +44,17 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right side - Photo placeholder */}
+          {/* Right side - Profile Photo */}
           <div className="flex items-center justify-center">
             <div 
-              className="w-full max-w-md aspect-square rounded-lg border-2 border-dashed border-primary/30 flex items-center justify-center"
-              data-testid="photo-placeholder"
+              className="w-full max-w-md aspect-square rounded-lg overflow-hidden border-4 border-white shadow-2xl"
+              data-testid="profile-photo"
             >
-              <p className="text-gray-light text-center px-6">
-                Photo placeholder
-                <br />
-                <span className="text-sm">(Add your photo here later)</span>
-              </p>
+              <img 
+                src={profilePhoto} 
+                alt="Shubhanga C S" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

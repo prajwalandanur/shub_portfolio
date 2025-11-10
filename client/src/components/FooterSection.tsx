@@ -52,12 +52,9 @@ export default function FooterSection() {
             </Button>
           </div>
           
-          <div className="text-center space-y-2">
+          <div className="text-center">
             <p className="text-sm text-gray-light">
               © 2025 Shubhanga C S. All rights reserved.
-            </p>
-            <p className="text-sm text-gray-light flex items-center justify-center gap-2">
-              Designed & Built with <Heart className="h-4 w-4 text-primary fill-primary" /> using Flutter & SvelteKit
             </p>
           </div>
         </div>

@@ -2,13 +2,16 @@ import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import testimonial1 from '@assets/download (1)_1762782661761.jpeg';
+import testimonial2 from '@assets/images (1)_1762782661761.jpeg';
+import testimonial3 from '@assets/download_1762782661762.jpeg';
 
 const testimonials = [
   {
     name: 'Ravi Kumar',
     designation: 'Chartered Accountant',
     organization: 'RK & Associates',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Ravi&backgroundColor=b6e3f4',
+    image: testimonial1,
     feedback: 'The CA Application developed by Shubhang\'s team has transformed our workflow. We can now manage client queries, employee communication, and attendance tracking seamlessly in one place. The biometric integration for remote staff is especially impressive — it\'s reliable, efficient, and user-friendly.',
     projectName: 'CA Application'
   },
@@ -16,9 +19,17 @@ const testimonials = [
     name: 'Anil Deshmukh',
     designation: 'Project Head',
     organization: 'Rural Banking Integration Program',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Anil&backgroundColor=c0aede',
+    image: testimonial2,
     feedback: 'EddoSwipe has been a breakthrough for rural financial accessibility. The platform enables transactions and government services even in low-connectivity areas. Thanks to Shubhang\'s robust backend architecture, we now handle thousands of transactions daily with exceptional reliability.',
     projectName: 'EddoSwipe'
+  },
+  {
+    name: 'Rahul Shetty',
+    designation: 'Technical Coordinator',
+    organization: 'Alva\'s PU College',
+    image: testimonial3,
+    feedback: 'The RFID Telephony Application developed by Shubhang\'s team has been a major success for us. Over 500+ telephone recharge machines are now seamlessly integrated with the system, handling 1 crore+ transactions every year through this portal. The reliability, scalability, and performance of the solution have greatly improved our operational efficiency and automation.',
+    projectName: 'Vithsutra RFID Telephony Application'
   }
 ];
 
