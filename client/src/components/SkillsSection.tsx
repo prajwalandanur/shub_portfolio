@@ -1,81 +1,82 @@
 import { Badge } from '@/components/ui/badge';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Icon } from '@iconify/react';
 
-// Organized skills by category with their Simple Icons slugs
+// Organized skills by category with their Iconify icon names
 const skillCategories = [
   {
     title: 'Languages',
     skills: [
-      { name: 'Go', slug: 'go' },
-      { name: 'Dart', slug: 'dart' },
-      { name: 'Java', slug: 'openjdk' },
-      { name: 'C', slug: 'c' },
-      { name: 'Rust', slug: 'rust' },
-      { name: 'Python', slug: 'python' },
-      { name: 'TypeScript', slug: 'typescript' },
-      { name: 'JavaScript', slug: 'javascript' },
+      { name: 'Go', icon: 'simple-icons:go' },
+      { name: 'Dart', icon: 'simple-icons:dart' },
+      { name: 'Java', icon: 'simple-icons:openjdk' },
+      { name: 'C', icon: 'simple-icons:c' },
+      { name: 'Rust', icon: 'simple-icons:rust' },
+      { name: 'Python', icon: 'simple-icons:python' },
+      { name: 'TypeScript', icon: 'simple-icons:typescript' },
+      { name: 'JavaScript', icon: 'simple-icons:javascript' },
     ]
   },
   {
     title: 'Frameworks',
     skills: [
-      { name: 'React', slug: 'react' },
-      { name: 'Flutter', slug: 'flutter' },
-      { name: 'Node.js', slug: 'nodedotjs' },
-      { name: 'Echo', slug: 'go' },
+      { name: 'React', icon: 'simple-icons:react' },
+      { name: 'Flutter', icon: 'simple-icons:flutter' },
+      { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
+      { name: 'Echo', icon: 'simple-icons:go' },
     ]
   },
   {
     title: 'Version Control',
     skills: [
-      { name: 'Git', slug: 'git' },
-      { name: 'GitHub', slug: 'github' },
+      { name: 'Git', icon: 'simple-icons:git' },
+      { name: 'GitHub', icon: 'simple-icons:github' },
     ]
   },
   {
     title: 'Caching Systems',
     skills: [
-      { name: 'Redis', slug: 'redis' },
-      { name: 'Memcached', slug: 'memcached' },
+      { name: 'Redis', icon: 'simple-icons:redis' },
+      { name: 'Memcached', icon: 'simple-icons:memcached' },
     ]
   },
   {
     title: 'Databases',
     skills: [
-      { name: 'MySQL', slug: 'mysql' },
-      { name: 'PostgreSQL', slug: 'postgresql' },
-      { name: 'MongoDB', slug: 'mongodb' },
+      { name: 'MySQL', icon: 'simple-icons:mysql' },
+      { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
+      { name: 'MongoDB', icon: 'simple-icons:mongodb' },
     ]
   },
   {
     title: 'Message Brokers',
     skills: [
-      { name: 'MQTT', slug: 'mqtt' },
-      { name: 'NATS', slug: 'nats' },
+      { name: 'MQTT', icon: 'simple-icons:mqtt' },
+      { name: 'NATS', icon: 'simple-icons:natsdotio' },
     ]
   },
   {
     title: 'Queues',
     skills: [
-      { name: 'RabbitMQ', slug: 'rabbitmq' },
+      { name: 'RabbitMQ', icon: 'simple-icons:rabbitmq' },
     ]
   },
   {
     title: 'DevOps Tools',
     skills: [
-      { name: 'Docker', slug: 'docker' },
-      { name: 'Kubernetes', slug: 'kubernetes' },
-      { name: 'GitHub Actions', slug: 'githubactions' },
-      { name: 'Ansible', slug: 'ansible' },
+      { name: 'Docker', icon: 'simple-icons:docker' },
+      { name: 'Kubernetes', icon: 'simple-icons:kubernetes' },
+      { name: 'GitHub Actions', icon: 'simple-icons:githubactions' },
+      { name: 'Ansible', icon: 'simple-icons:ansible' },
     ]
   },
   {
     title: 'Cloud Platforms',
     skills: [
-      { name: 'AWS', slug: 'amazonaws' },
-      { name: 'Azure', slug: 'microsoftazure' },
-      { name: 'GCP', slug: 'googlecloud' },
-      { name: 'DigitalOcean', slug: 'digitalocean' },
+      { name: 'AWS', icon: 'simple-icons:amazonaws' },
+      { name: 'Azure', icon: 'simple-icons:microsoftazure' },
+      { name: 'GCP', icon: 'simple-icons:googlecloud' },
+      { name: 'DigitalOcean', icon: 'simple-icons:digitalocean' },
     ]
   },
 ];
@@ -103,9 +104,10 @@ export default function SkillsSection() {
       }`}
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-deep-black text-center mb-4">
           Technical Skills
         </h2>
+        <div className="w-24 h-1 bg-gold mx-auto mb-16 glow-gold" />
         
         {/* Skills organized by category */}
         <div className="space-y-12">
@@ -119,19 +121,12 @@ export default function SkillsSection() {
                   <div
                     key={skillIndex}
                     className="flex flex-col items-center justify-center p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover-elevate glow-blue-hover"
-                    data-testid={`skill-${skill.slug}-${skillIndex}`}
+                    data-testid={`skill-${skill.name.toLowerCase()}-${skillIndex}`}
                   >
-                    <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                      <img 
-                        src={`https://cdn.simpleicons.org/${skill.slug}`}
-                        alt={`${skill.name} logo`}
-                        className="w-full h-full object-contain"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          if (!target.src.includes('FFFFFF')) {
-                            target.src = `https://cdn.simpleicons.org/${skill.slug}/FFFFFF`;
-                          }
-                        }}
+                    <div className="w-16 h-16 mb-4 flex items-center justify-center text-foreground">
+                      <Icon 
+                        icon={skill.icon}
+                        className="w-full h-full"
                       />
                     </div>
                     <span className="text-sm font-medium text-foreground text-center">

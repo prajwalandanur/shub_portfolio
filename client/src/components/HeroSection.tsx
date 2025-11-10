@@ -18,8 +18,8 @@ export default function HeroSection() {
           {/* Left side - Name and Description */}
           <div className="space-y-6 animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-              <span className="text-foreground">Shubhanga</span>{' '}
-              <span className="text-primary">C S</span>
+              <span className="text-deep-black">Shubhanga</span>{' '}
+              <span className="text-gold">C S</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-light leading-relaxed">Designer and Developer helping brands craft impactful digital experiences that merge creativity with technology</p>

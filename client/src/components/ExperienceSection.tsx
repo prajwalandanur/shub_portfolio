@@ -14,10 +14,10 @@ export default function ExperienceSection() {
       }`}
     >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-deep-black text-center mb-4">
           Experience
         </h2>
-        <div className="w-24 h-1 bg-primary mx-auto mb-16 glow-blue" />
+        <div className="w-24 h-1 bg-gold mx-auto mb-16 glow-gold" />
         
         <div className="space-y-8">
           <Card className="p-8 border-l-4 border-l-primary glow-blue-hover transition-all duration-300" data-testid="card-experience-intern">

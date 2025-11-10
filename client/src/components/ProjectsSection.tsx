@@ -87,9 +87,10 @@ export default function ProjectsSection() {
       }`}
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-deep-black text-center mb-4">
           Things I've Built
         </h2>
+        <div className="w-24 h-1 bg-gold mx-auto mb-16 glow-gold" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
