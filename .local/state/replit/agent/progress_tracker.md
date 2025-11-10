@@ -40,3 +40,5 @@
 [x] 30. Replace placeholder avatars with actual professional photos
 [x] 31. Remove "Designed & Built with Flutter & SvelteKit" from footer
 [x] 32. Restart workflow and verify all final changes
+[x] 33. Update Ravi Kumar (CA) testimonial photo with actual professional photo
+[x] 34. Restart workflow and verify testimonial photos display correctly
