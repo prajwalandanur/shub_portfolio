@@ -1,0 +1,212 @@
+🎨 THEME & VISUAL DIRECTION (BLACK + BLUE PORTFOLIO STYLE)
+Overall Aesthetic
+
+Mood: Modern, tech-driven, and confident.
+
+Theme: Dark digital-agency style with clean typography and bold accent highlights.
+
+Primary Background: Deep matte black (#000000) or dark charcoal (#0A0A0A).
+
+Accent Color: Bright vivid blue (#007BFF) — to replace yellow in all elements.
+
+Text Colors:
+
+White (#FFFFFF) for headings and primary text.
+
+Light gray (#B3B3B3) for secondary paragraphs.
+
+Accent blue (#007BFF) for highlights, links, and key phrases.
+
+Lighting & Motion
+
+Subtle floating blue particles or small glowing dots in the background (like the reference yellow ones).
+
+Gentle radial blue gradient at the center or bottom edges to give soft illumination.
+
+Optionally, light motion blur or fade-in animation for section transitions.
+
+🔤 TYPOGRAPHY SYSTEM
+Type	Font Family	Style	Color	Example
+Headings	Poppins / Inter / Manrope	Extra-bold	White + Accent Blue	“Our Work. Your Way.” style
+Subheadings	Poppins Medium / Regular	White	Used for section titles like Projects, Experience	
+Body Text	Inter / Manrope Regular	Light gray (#B3B3B3)	For descriptions and paragraphs	
+Highlights / Tags	Italic or Semi-Bold Accent Blue (#007BFF)	Adds energy	For keywords, quotes, or emphasis	
+
+Text Hierarchy Example:
+Heading (white + blue) → Subtext (gray) → Quote/Tagline (italic blue) → CTA Button (solid blue).
+
+🧭 LAYOUT & COMPOSITION
+
+Center-aligned hero section with large bold typography.
+
+Use horizontal dividers or soft glow lines in blue to separate sections.
+
+Section Spacing: Large padding (100–150px) between sections for breathing room.
+
+Grid System: 12-column responsive grid for content blocks.
+
+CTA Buttons: Rounded rectangle buttons with:
+
+Background: #007BFF
+
+Text: White
+
+Hover: Slightly lighter shade (#339CFF) + glow shadow
+
+💡 PORTFOLIO CONTENT STRUCTURE (WITH THEME APPLIED)
+1️⃣ HERO SECTION
+
+Heading:
+
+“Our Work. Your Way.”
+
+“Our” and “Way.” in accent blue (#007BFF)
+
+“Work.” and “Your” in white
+
+Subtext:
+
+“I turn ideas into impactful digital experiences.”
+
+Tagline:
+
+"Design. Build. Scale." — italicized in blue.
+
+CTA Button:
+
+[ Get in Touch → ] — solid blue background, white text, slightly rounded edges.
+
+2️⃣ ABOUT ME
+
+Heading:
+
+“Hi, I’m Shubhanga C S”
+
+Subheading:
+
+Designer • Developer • Content Creator
+
+Body Text:
+
+Passionate about building elegant digital solutions that blend design and technology.
+I specialize in creating visually striking, performance-driven applications using Flutter, SvelteKit, and Golang.
+
+Contact Line (use blue icons or text links):
+📞 8618245146 | ✉️ developer.shubhangcs@gmail.com
+
+🔗 LinkedIn | 💻 GitHub
+
+3️⃣ EDUCATION
+
+Section Title:
+
+“Education” (white text, blue underline or glow accent)
+
+Content Block:
+Bachelor of Technology in Computer Science
+Alva’s Institute of Engineering and Technology, Moodbidri, Karnataka
+📆 2021 – 2025
+
+4️⃣ TECHNICAL SKILLS
+
+Heading: “Technical Skills”
+
+Organize into 4 columns (each with blue icons):
+
+Programming & Frameworks:
+Golang • Flutter • SvelteKit • Node.js
+
+Databases & Messaging:
+PostgreSQL • MongoDB • Redis • MQTT / EMQX
+
+Tools & Platforms:
+Docker • AWS • VS Code • Android Studio • Atom • Zed
+
+Other Technologies:
+Linux • GitHub • Streams
+
+5️⃣ EXPERIENCE
+
+Section Title:
+
+“Experience” (white heading, blue highlight bar underneath)
+
+Job Card:
+Web Development Intern – Epicode
+Manipal, Karnataka | May 2024 – July 2024
+
+Built a new CPaaS Portal using SvelteKit and Tailwind CSS.
+
+Designed a complete, responsive UI/UX with modern design principles.
+
+Collaborated on backend API integration and frontend optimization.
+
+(Use a blue left border or glowing highlight when hovering over job cards.)
+
+6️⃣ PROJECTS
+
+Display projects in cards with soft blue glow hover effect.
+
+Project 1 – SKF Elixer Drier Application
+📆 August 2024 | Golang • PostgreSQL • Docker • Postman • SvelteKit • Flutter • BLoC • EMQX
+
+Real-time rice drier monitoring system with Flutter.
+
+Handled multiple streams via BLoC.
+
+Integrated MQTT + EMQX PUB/SUB model.
+
+Project 2 – VSENSE Biometric User Panel
+📆 March 2024 | Golang • PostgreSQL • Docker • SvelteKit • Flutter • Redis
+
+Built Flutter Windows User Portal + Golang HTTP Server.
+
+Integrated USB serial communication for fingerprint registration.
+
+Automated Excel sheet generation with Golang.
+
+Project 3 – NFC Reader Writer Bluetooth App
+📆 March 2024 | Flutter • Golang
+
+Developed NFC Reader/Writer over Bluetooth.
+
+Built custom data exchange logic (Base64, Uint8List).
+
+Project 4 – Bird Watchers Application
+📆 July 2022 | Flutter • NodeJS • MongoDB • Docker • BLoC
+
+Designed UI in Flutter, integrated APIs, applied dependency injection.
+
+7️⃣ LEADERSHIP
+
+Coordinator – Edwin’s Lab Open Source (2023–2024)
+
+Built and led a strong open-source team.
+
+Conducted workshops, training sessions, and guest talks.
+
+Organized multiple events around emerging technologies.
+
+8️⃣ HIGHLIGHTS
+
+✅ Cross-platform app development (Flutter, SvelteKit)
+✅ Backend expertise (Golang, PostgreSQL, Redis, MQTT)
+✅ Strong in real-time system design and stream handling
+✅ Skilled in UI/UX and efficient code architecture
+
+9️⃣ FOOTER
+
+Dark background continuation — subtle blue gradient fade at bottom.
+Include contact links and copyright.
+
+© 2025 Shubhanga C S. All rights reserved.
+Designed & Built with ❤️ using Flutter & SvelteKit.
+
+⚙️ AI / DESIGN TOOL INSTRUCTION SUMMARY
+
+Create a personal portfolio website in a dark theme with black background and vivid blue (#007BFF) accents.
+Use bold geometric sans-serif typography (Poppins / Inter).
+Keep all sections centered, minimal, and visually balanced.
+Replace all yellow tones from the original reference with glowing blue elements.
+Maintain the same text hierarchy, spacing, and layout structure.
+Use subtle blue particle animations, hover glows, and soft gradients to create a futuristic digital feel.

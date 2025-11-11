@@ -1,0 +1,83 @@
+VSENSE Biometric User Panel
+
+Tech Used: Golang, PostgreSQL, Docker, Postman, SvelteKit, Flutter, Redis
+
+Built a complete User Portal for Windows using Flutter, backed by a Golang HTTP server.
+
+Integrated USB Serial communication with ESP-32 for fingerprint registration.
+
+Implemented automatic Excel sheet generation using Go Excel libraries.
+
+Used Redis-SON for faster biometric data handling and improved user experience.
+
+Drive Routes – B2B Mobile Trading Platform
+
+Tech Used: Flutter, Node.js, Golang
+
+Built a trading platform connecting wholesalers / distributors directly to customers.
+
+Reduced dependency on middle distributors by enabling direct digital trade.
+
+Currently has 250+ active users using the platform for daily trading operations.
+
+Delivered as an easily downloadable mobile app for seamless onboarding.
+
+PayBazaar – Fintech Portal
+
+Tech Used: Go, React, PostgreSQL, Redis, Docker
+
+Built a multi-service digital portal similar to PayTM / PhonePe.
+
+Users can book flight tickets, pay electricity bills, recharge mobiles and more.
+
+Designed as a scalable web-based fintech solution using robust backend architecture.
+
+Currently used by 500+ users for daily financial transactions.
+
+EddoSwipe – Rural Fintech Integration Platform (Flagship)
+
+Tech Used: Go, PostgreSQL, Redis, RabbitMQ, Docker, Kubernetes
+
+Built to support rural areas with low smartphone + internet penetration.
+
+Users can apply for government schemes, pay utility bills, and transfer bank funds.
+
+Integrated multiple bank APIs for seamless inter-bank transactions.
+
+Currently serving 100,000+ users, processing ~2,000 transactions per day.
+
+Vithsutra RFID Telephony Application
+
+Tech Used: Go, Flutter, MQTT, Docker, GitHub Actions
+
+Built telephony software for Vithsutra Technologies with RFID integration.
+
+Linked RFID-based device authentication with our remote management portal.
+
+Enabled secure data synchronization between hardware devices and backend services.
+
+Improved tracking, verification and system control through RFID event triggers.
+
+CA Application
+
+Tech Used: Flutter, Golang
+
+Built for a Chartered Accountant firm for both customer-facing and internal use.
+
+One section lets customers raise queries and get responses directly.
+
+Internal section allows employees to communicate and receive admin broadcasts.
+
+Enabled remote attendance marking using the mobile device’s biometric sensor.
+
+SKF Elixer Drier Application
+
+Tech Used: Golang, PostgreSQL, Docker, Postman, SvelteKit, Flutter, BLoC, EMQX
+
+Built a real-time rice drier monitoring application using Flutter.
+
+Implemented Streams heavily and handled multiple streams using BLoC state management.
+
+Integrated MQTT with EMQX broker and implemented full pub-sub flow.
+
+Enabled real-time monitoring + control of drier parameters from the app.
